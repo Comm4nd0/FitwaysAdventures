@@ -1,0 +1,9 @@
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+fitways_adventures/local_settings.py
+db.sqlite3
+LightsailDefaultPrivateKey-eu-west-2.pem
+venv
