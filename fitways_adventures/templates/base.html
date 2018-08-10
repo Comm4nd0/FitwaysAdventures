@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <title>Fitways Adventures</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+
+<div class="hero-image">
+    <div class="hero-text">
+        {#icons#}
+    </div>
+</div>
+<body class="bg-dark">
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Activites
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            {#                            <li><a class="dropdown-item" href="#">Action</a></li>#}
+                            {#                            <li><a class="dropdown-item" href="#">Another action</a></li>#}
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Trips</a>
+                                <ul class="dropdown-menu">
+
+                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">UK
+                                        Trips</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Hill Walking Days</a></li>
+                                            <li><a class="dropdown-item" href="#">Winter Hill Walking Days</a></li>
+                                            <li><a class="dropdown-item" href="#">Scrambling Days</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Himalayan
+                                        Trips</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Annapurna Sanctuary Treck</a></li>
+                                            <li><a class="dropdown-item" href="#">Everest Base Camp Trek</a></li>
+                                            <li><a class="dropdown-item" href="#">Everest, Gokyo & The Cho La Pass</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Elbrus Treck</a></li>
+                                    <li><a class="dropdown-item" href="#">Inca Trail</a></li>
+                                    <li><a class="dropdown-item" href="#">Kilimanjaro Trek</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle"
+                                                            href="#">Challenges</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">The 3 Peaks Challenge</a></li>
+                                    <li><a class="dropdown-item" href="#">Winter 3 Peaks Challenge</a></li>
+                                    <li><a class="dropdown-item" href="#">The Welsh 3000 Challenge</a></li>
+                                    <li><a class="dropdown-item" href="#">The Yorkshire 3 Peaks Challenge</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle"
+                                                            href="#">Training</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mountain Training in Snowdonia</a></li>
+                                    <li><a class="dropdown-item" href="#">Mountain Training in The Brecon Beacons</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Winter Skills Course</a></li>
+                                    <li><a class="dropdown-item" href="#">Beginner Navigation Course</a></li>
+                                    <li><a class="dropdown-item" href="#">Advanced Navigation Course</a></li>
+                                    <li><a class="dropdown-item" href="#">Indoor Climbing</a></li>
+                                    <li><a class="dropdown-item" href="#">Outdoor Climbing</a></li>
+                                    <li><a class="dropdown-item" href="#">Mountain Training and Fitness</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Corporate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="#">The Comapany</a></li>
+                            <li><a class="dropdown-item" href="#">The Team</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Event Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </nav>
+    <div class="container bg-light">
+{#        <div class="slideshow-container">#}
+{##}
+{#            <div class="mySlides fade">#}
+{#                <div class="numbertext">1 / 3</div>#}
+{#                <img src="img_nature_wide.jpg" style="width:100%">#}
+{#                <div class="text">Caption Text</div>#}
+{#            </div>#}
+{##}
+{#            <div class="mySlides fade">#}
+{#                <div class="numbertext">2 / 3</div>#}
+{#                <img src="img_snow_wide.jpg" style="width:100%">#}
+{#                <div class="text">Caption Two</div>#}
+{#            </div>#}
+{##}
+{#            <div class="mySlides fade">#}
+{#                <div class="numbertext">3 / 3</div>#}
+{#                <img src="img_mountains_wide.jpg" style="width:100%">#}
+{#                <div class="text">Caption Three</div>#}
+{#            </div>#}
+{##}
+{#        </div>#}
+{#        <br>#}
+{##}
+{#        <div style="text-align:center">#}
+{#            <span class="dot"></span>#}
+{#            <span class="dot"></span>#}
+{#            <span class="dot"></span>#}
+{#        </div>#}
+    </div>
+    {% block content %}
+
+    {% endblock %}
+</div>
+</body>
+<script>
+
+    {#MENU#}
+    $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+        if (!$(this).next().hasClass('show')) {
+            $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+        }
+        var $subMenu = $(this).next(".dropdown-menu");
+        $subMenu.toggleClass('show');
+
+
+        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+            $('.dropdown-submenu .show').removeClass("show");
+        });
+
+
+        return false;
+    });
+
+    {#SLIDESHOW#}
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+</script>
+</html>
