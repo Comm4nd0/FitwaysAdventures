@@ -1,8 +1,632 @@
 {% extends 'base.html' %}
-
+{% load staticfiles %}
 {% block content %}
-<div class="container bg-light">
-test
-</div>
+    <!--Slider Area Start-->
+    <div class="slider-area slider-three">
+        <div class="preview-2">
+            <div id="nivoslider" class="slides">
+                <a href="#"><img src="{% static 'img/slider/slider-1.jpg' %}" alt="" title="#slider-1-caption1"/></a>
+                <a href="#"><img src="{% static 'img/slider/slider-2.jpg' %}" alt="" title="#slider-1-caption1"/></a>
+            </div>
+            <div id="slider-1-caption1" class="nivo-html-caption nivo-caption">
+                <div class="banner-content slider-1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-9">
+                                <div class="text-content">
+                                    <h1 class="title1">Fun For Everyone</h1>
+                                    <h2 class="sub-title">Amazing <span>Gateway</span> with </h2>
+                                    <h2 class="sub-title">Friends</h2>
+                                    <form action="#" id="banner-searchbox" class="hidden-xs">
+                                        <div class="adventure-cat">
+                                            <select name="category" class="search-adventure">
+                                                <option>Select Your Adventure</option>
+                                                <option>UK Trips</option>
+                                                <option>International Trips</option>
+                                                <option>Challenges</option>
+                                                <option>Training</option>
+                                            </select>
+                                        </div>
+                                        <div class="adventure-cat destination">
+                                            <select name="destination" class="search-adventure">
+                                                <option>Select Your Destination</option>
+                                                <option>Madagascar</option>
+                                                <option>Botswana</option>
+                                                <option>Canada, Alaska</option>
+                                                <option>Antarctica</option>
+                                                <option>Swaziland</option>
+                                                <option>Ethiopia</option>
+                                                <option>Tanzania</option>
+                                            </select>
+                                        </div>
+                                        <div class="adventure-cat floatright">
+                                            <select name="date" class="search-adventure">
+                                                <option>Select Date</option>
+                                                <option>1-4-2016</option>
+                                                <option>5-9-2016</option>
+                                                <option>3-10-2016</option>
+                                                <option>15-2-2017</option>
+                                                <option>22-7-2017</option>
+                                                <option>10-8-2017</option>
+                                                <option>7-11-2017</option>
+                                                <option>9-12-2017</option>
+                                            </select>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <button type="submit" id="btn-search-category" class="button-blue">SEARCH
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Slider Area-->
+    <!--About Area Start-->
+    <div class="about-area text-center about-area-three hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-6">
+                    <div class="about-container section-padding">
+                        <div class="section-title title-three">
+                            <div class="title-border">
+                                <h1>About <span class="text-white">Adventures</span></h1>
+                            </div>
+                        </div>
+                        <div class="about-text">
+                            <h1>This is your planet. Introduce yourself.</h1>
+                            <p>Travelling with Fitways Adventures is the very best way to get up close and personal with your
+                                planet in a way you’d never manage on your own. For more than 20 years, we’ve brought
+                                together people from all over the globe to create lifelong connections. This is your
+                                planet, after all—and the better you get to know it.....</p>
+                            <a href="#" class="button-blue">Why Trtavel with Adventures?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of About Area-->
+    <!--Portfolio Area Start-->
+    <div class="portfolio-area portfolio-three">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title title-three text-center">
+                        <div class="title-border">
+                            <h1>Browse by <span>Hiking &amp; Camping</span></h1>
+                        </div>
+                        <p>Everyone loves to travel, but not everyone loves to travel the same way. G Adventures Travel
+                            Styles gather trips of a feather<br> together so you can spend less time searching and more
+                            time dreaming about where you’ll go.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-4">
+                    <div class="single-portfolio">
+                        <a href="#"><img src="img/portfolio/17.jpg" alt=""></a>
+                        <div class="portfolio-text effect-bottom">
+                            <h4><a href="#">Beach Tours</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="portfolio-link">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-portfolio">
+                        <a href="#"><img src="img/portfolio/18.jpg" alt=""></a>
+                        <div class="portfolio-text effect-bottom">
+                            <h4><a href="#">beach party</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="portfolio-link">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="single-portfolio">
+                        <a href="#"><img src="img/portfolio/19.jpg" alt=""></a>
+                        <div class="portfolio-text">
+                            <h4><a href="#">Sightsing Tours</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="portfolio-link">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-portfolio">
+                        <a href="#"><img src="img/portfolio/20.jpg" alt=""></a>
+                        <div class="portfolio-text">
+                            <h4><a href="#">Family Fun</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="portfolio-link">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="single-portfolio">
+                        <a href="#"><img src="img/portfolio/21.jpg" alt=""></a>
+                        <div class="portfolio-text effect-bottom">
+                            <h4><a href="#">Night Cruises</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="portfolio-link">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-portfolio">
+                        <a href="#"><img src="img/portfolio/22.jpg" alt=""></a>
+                        <div class="portfolio-text effect-bottom">
+                            <h4><a href="#">Water Games</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="portfolio-link">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 hidden-sm">
+                    <div class="single-portfolio">
+                        <a href="#"><img src="img/portfolio/23.jpg" alt=""></a>
+                        <div class="portfolio-text">
+                            <h4><a href="#">Private Charter</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="portfolio-link">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-portfolio">
+                        <a href="#"><img src="img/portfolio/24.jpg" alt=""></a>
+                        <div class="portfolio-text">
+                            <h4><a href="#">Food &amp; Drink</a></h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="portfolio-link">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Portfolio Area-->
+    <!--Fun Factor Area Start-->
+    <div class="fun-factor-area fun-factor-three text-center hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title title-three">
+                        <div class="title-border">
+                            <h1 class="text-white">SOME <span>FUN INFO</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-3">
+                    <div class="single-fun-wrapper">
+                        <div class="single-icon-three">
+                            <div class="icon-border-left"></div>
+                            <img src="img/icon/7.png" class="primary-img" alt="">
+                            <img src="img/icon/7-hover-2.png" class="secondary-img" alt="">
+                            <h4><span class="counter">5670</span> M</h4>
+                            <h5>Cyliing Track</h5>
+                            <div class="icon-border-right"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3">
+                    <div class="single-fun-wrapper">
+                        <div class="single-icon-three">
+                            <div class="icon-border-left"></div>
+                            <img src="img/icon/8.png" class="primary-img" alt="">
+                            <img src="img/icon/8-hover-2.png" class="secondary-img" alt="">
+                            <h4><span class="counter">480</span> M</h4>
+                            <h5>Distance Coverd</h5>
+                            <div class="icon-border-right"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3">
+                    <div class="single-fun-wrapper">
+                        <div class="single-icon-three">
+                            <div class="icon-border-left"></div>
+                            <img src="img/icon/9.png" class="primary-img" alt="">
+                            <img src="img/icon/9-hover-2.png" class="secondary-img" alt="">
+                            <h4><span class="counter">5670</span> M</h4>
+                            <h5>Altitude Hiked</h5>
+                            <div class="icon-border-right"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3">
+                    <div class="single-fun-wrapper">
+                        <div class="single-icon-three">
+                            <div class="icon-border-left"></div>
+                            <img src="img/icon/10.png" class="primary-img" alt="">
+                            <img src="img/icon/10-hover-2.png" class="secondary-img" alt="">
+                            <h4><span class="counter">180</span> KM</h4>
+                            <h5>Sailing Distance</h5>
+                            <div class="icon-border-right"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 hidden-sm">
+                    <div class="single-fun-wrapper">
+                        <div class="single-icon-three">
+                            <div class="icon-border-left"></div>
+                            <img src="img/icon/11.png" class="primary-img" alt="">
+                            <img src="img/icon/11-hover-2.png" class="secondary-img" alt="">
+                            <h4><span class="counter">570</span> Days</h4>
+                            <h5>Spent Adventure</h5>
+                            <div class="icon-border-right"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 hidden-sm">
+                    <div class="single-fun-wrapper">
+                        <div class="single-icon-three">
+                            <div class="icon-border-left"></div>
+                            <img src="img/icon/12.png" class="primary-img" alt="">
+                            <img src="img/icon/12-hover-2.png" class="secondary-img" alt="">
+                            <h4><span class="counter">567</span> M</h4>
+                            <h5>Jugle Distance</h5>
+                            <div class="icon-border-right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Fun Factor Area-->
+    <!--Best Sell Area Start-->
+    <div class="best-sell-area section-padding best-sell-three">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title title-three text-center">
+                        <div class="title-border">
+                            <h1>Best <span>Selling Trips</span></h1>
+                        </div>
+                        <p>Not sure what you’re looking for and need a little inspiration? We can help. Check out our
+                            handpicked <br>lists of topical trips you can take right now.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="sell-text-container">
+                        <div class="title-container">
+                            <h3>Beach Tour</h3>
+                            <div class="best-sell-link">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                            </div>
+                        </div>
+                        <P>Get closer to nature. From the jungles of India to the African bush, our small group tours
+                            take you to the heart of nature. From elephants silhouetted against an Africa sunset to
+                            orangutans swinging in the treetops.....</P>
+                        <a href="#" class="button-one button-blue">VIew trip</a>
+                    </div>
+                    <div class="row">
+                        <div class="best-sell-slider carousel-style-one">
+                            <div class="col-md-3">
+                                <div class="hover-effect">
+                                    <div class="box-hover">
+                                        <a href="#">
+                                            <img src="img/sell/11.jpg" alt="">
+                                            <span>Sightseeing Tours</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="hover-effect">
+                                    <div class="box-hover">
+                                        <a href="#" class="no-margin">
+                                            <img src="img/sell/13.jpg" alt="">
+                                            <span>Beach Party</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="hover-effect">
+                                    <div class="box-hover">
+                                        <a href="#">
+                                            <img src="img/sell/12.jpg" alt="">
+                                            <span>Private Charters</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="hover-effect">
+                                    <div class="box-hover">
+                                        <a href="#" class="no-margin">
+                                            <img src="img/sell/14.jpg" alt="">
+                                            <span>Family Fun</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="hover-effect">
+                                    <div class="box-hover">
+                                        <a href="#">
+                                            <img src="img/sell/13.jpg" alt="">
+                                            <span>Beach Party</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="hover-effect">
+                                    <div class="box-hover">
+                                        <a href="#" class="no-margin">
+                                            <img src="img/sell/11.jpg" alt="">
+                                            <span>Sightseeing Tours</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="hover-effect">
+                                    <div class="box-hover">
+                                        <a href="#">
+                                            <img src="img/sell/14.jpg" alt="">
+                                            <span>Family Fun</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="hover-effect">
+                                    <div class="box-hover">
+                                        <a href="#" class="no-margin">
+                                            <img src="img/sell/12.jpg" alt="">
+                                            <span>Private Charters</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 hidden-sm">
+                    <img src="img/sell/15.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Best Sell Area-->
+    <!--Newsletter Area Start-->
+    <div class="newsletter-area newsletter-three">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-4 col-sm-12">
+                    <div class="section-title title-three text-center">
+                        <div class="title-border">
+                            <h1 class="text-white">Subscribe for <span>Newsletter</span></h1>
+                        </div>
+                        <p class="text-white">Join our community of over 300,000 global readers who receive emails
+                            filled with news,<br> promotions, and other good stuff from G Adventures.</p>
+                    </div>
+                    <form action="#" method="post" id="newsletter">
+                        <div class="newsletter-content">
+                            <div class="row">
+                                <div class="col-lg-9 col-md-8 col-sm-9 col-xs-12">
+                                    <input type="text" name="email" placeholder="Enter your email address ......">
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12">
+                                    <button type="submit" class="button button-blue"><span>Subscribe</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Newsletter Area-->
+    <!--Blog Area Start-->
+    <div class="blog-area section-padding blog-three-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title title-three text-center">
+                        <div class="title-border">
+                            <h1>Latest <span>Blog Posts</span></h1>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dolor turpis, pulvinar
+                            varius dui<br> id, convallis iaculis eros. Praesent porta lacinia elementum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="blog-carousel">
+                    <div class="col-md-6">
+                        <div class="single-blog hover-effect">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="blog-image box-hover">
+                                        <a href="blog-details.html"><img src="img/blog/1.jpg" alt=""></a>
+                                        <div class="date-time">
+                                            <span class="date">10</span>
+                                            <span class="month">AUG</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 margin-left">
+                                    <div class="blog-text">
+                                        <h4><a href="blog-details.html">What is travel? We answer the big, burning
+                                            question.....</a></h4>
+                                        <p>The question of What Travel Is is interesting, but more for what it tells you
+                                            about the people doing the asking. The question of What Travel Is is
+                                            interesting, but more for what it tells you about the people doing the
+                                            asking.</p>
+                                        <a href="blog-details.html" class="button-one">Learn More</a>
+                                        <div class="blog-link">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa fa-rss"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="single-blog hover-effect">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="blog-image box-hover">
+                                        <a href="blog-details.html"><img src="img/blog/2.jpg" alt=""></a>
+                                        <div class="date-time">
+                                            <span class="date">10</span>
+                                            <span class="month">AUG</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 margin-left">
+                                    <div class="blog-text">
+                                        <h4><a href="blog-details.html">What is travel? We answer the big, burning
+                                            question.....</a></h4>
+                                        <p>The question of What Travel Is is interesting, but more for what it tells you
+                                            about the people doing the asking. The question of What Travel Is is
+                                            interesting, but more for what it tells you about the people doing the
+                                            asking.</p>
+                                        <a href="blog-details.html" class="button-one">Learn More</a>
+                                        <div class="blog-link">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa fa-rss"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Blog Area-->
+    <!--Team Area Start-->
+    <div class="team-area section-padding team-three">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title title-three text-center">
+                        <div class="title-border">
+                            <h1>Our <span>Team</span></h1>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dolor turpis, pulvinar
+                            varius dui<br> id, convallis iaculis eros. Praesent porta lacinia elementum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-member">
+                        <div class="team-image">
+                            <a href="#"><img src="img/team/1.jpg" alt=""></a>
+                            <div class="member-text effect-bottom">
+                                <h4><a href="#">Maria B. | <span>Hiking Guide</span></a></h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text</p>
+                                <div class="member-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-rss"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-member">
+                        <div class="team-image">
+                            <a href="#"><img src="img/team/2.jpg" alt=""></a>
+                            <div class="member-text effect-bottom">
+                                <h4><a href="#">Janifer Craving | <span>Photographer</span></a></h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text</p>
+                                <div class="member-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-rss"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 hidden-sm">
+                    <div class="single-member">
+                        <div class="team-image">
+                            <a href="#"><img src="img/team/3.jpg" alt=""></a>
+                            <div class="member-text effect-bottom">
+                                <h4><a href="#">Matt Jason | <span>Guide</span></a></h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text</p>
+                                <div class="member-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-rss"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Team Area-->
 
 {% endblock %}
