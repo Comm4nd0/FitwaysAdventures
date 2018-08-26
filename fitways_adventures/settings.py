@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['localhost', '35.178.105.236']
 
 INSTALLED_APPS = [
     'fitways',
+    'activities',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

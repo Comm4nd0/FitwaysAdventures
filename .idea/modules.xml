@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/fitways_adventures.iml" filepath="$PROJECT_DIR$/.idea/fitways_adventures.iml" />
       <module fileurl="file://$PROJECT_DIR$/../oeg/.idea/oeg.iml" filepath="$PROJECT_DIR$/../oeg/.idea/oeg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../salary_calc/.idea/salary_calc.iml" filepath="$PROJECT_DIR$/../salary_calc/.idea/salary_calc.iml" />
     </modules>
   </component>
 </project>

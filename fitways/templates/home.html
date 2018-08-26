@@ -19,7 +19,8 @@
                                     <h2 class="sub-title">Friends</h2>
                                     <form action="#" id="banner-searchbox" class="hidden-xs">
                                         <div class="adventure-cat">
-                                            <select name="category" class="search-adventure">
+                                            <select name="category" class="search-adventure" id="adventureType"
+                                                    onmousedown="updateDestination()">
                                                 <option>Select Adventure</option>
                                                 <option>UK Trips</option>
                                                 <option>International Trips</option>
@@ -28,28 +29,14 @@
                                             </select>
                                         </div>
                                         <div class="adventure-cat destination">
-                                            <select name="destination" class="search-adventure">
+                                            <select name="destination" class="search-adventure"
+                                                    id="adventureDestination" onmousedown="updateDates()">
                                                 <option>Select Destination</option>
-                                                <option>Madagascar</option>
-                                                <option>Botswana</option>
-                                                <option>Canada, Alaska</option>
-                                                <option>Antarctica</option>
-                                                <option>Swaziland</option>
-                                                <option>Ethiopia</option>
-                                                <option>Tanzania</option>
                                             </select>
                                         </div>
                                         <div class="adventure-cat floatright">
-                                            <select name="date" class="search-adventure">
+                                            <select name="date" class="search-adventure" id="adventureDates">
                                                 <option>Select Date</option>
-                                                <option>1-4-2016</option>
-                                                <option>5-9-2016</option>
-                                                <option>3-10-2016</option>
-                                                <option>15-2-2017</option>
-                                                <option>22-7-2017</option>
-                                                <option>10-8-2017</option>
-                                                <option>7-11-2017</option>
-                                                <option>9-12-2017</option>
                                             </select>
                                         </div>
                                         <div class="clearfix"></div>
@@ -79,7 +66,8 @@
                         </div>
                         <div class="about-text">
                             <h1>This is your planet. Introduce yourself.</h1>
-                            <p>Travelling with Fitways Adventures is the very best way to get up close and personal with your
+                            <p>Travelling with Fitways Adventures is the very best way to get up close and personal with
+                                your
                                 planet in a way you’d never manage on your own. For more than 20 years, we’ve brought
                                 together people from all over the globe to create lifelong connections. This is your
                                 planet, after all—and the better you get to know it.....</p>
@@ -231,211 +219,8 @@
         </div>
     </div>
     <!--End of Portfolio Area-->
-    <!--Fun Factor Area Start-->
-    <div class="fun-factor-area fun-factor-three text-center hidden-xs">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title title-three">
-                        <div class="title-border">
-                            <h1 class="text-white">SOME <span>FUN INFO</span></h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 col-sm-3">
-                    <div class="single-fun-wrapper">
-                        <div class="single-icon-three">
-                            <div class="icon-border-left"></div>
-                            <img src="{% static 'img/icon/7.png' %}" class="primary-img" alt="">
-                            <img src="{% static 'img/icon/7-hover-2.png' %}" class="secondary-img" alt="">
-                            <h4><span class="counter">5670</span> M</h4>
-                            <h5>Cyliing Track</h5>
-                            <div class="icon-border-right"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-3">
-                    <div class="single-fun-wrapper">
-                        <div class="single-icon-three">
-                            <div class="icon-border-left"></div>
-                            <img src="{% static 'img/icon/8.png' %}" class="primary-img" alt="">
-                            <img src="{% static 'img/icon/8-hover-2.png' %}" class="secondary-img" alt="">
-                            <h4><span class="counter">480</span> M</h4>
-                            <h5>Distance Coverd</h5>
-                            <div class="icon-border-right"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-3">
-                    <div class="single-fun-wrapper">
-                        <div class="single-icon-three">
-                            <div class="icon-border-left"></div>
-                            <img src="{% static 'img/icon/9.png' %}" class="primary-img" alt="">
-                            <img src="{% static 'img/icon/9-hover-2.png' %}" class="secondary-img" alt="">
-                            <h4><span class="counter">5670</span> M</h4>
-                            <h5>Altitude Hiked</h5>
-                            <div class="icon-border-right"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-3">
-                    <div class="single-fun-wrapper">
-                        <div class="single-icon-three">
-                            <div class="icon-border-left"></div>
-                            <img src="{% static 'img/icon/10.png' %}" class="primary-img" alt="">
-                            <img src="{% static 'img/icon/10-hover-2.png' %}" class="secondary-img" alt="">
-                            <h4><span class="counter">180</span> KM</h4>
-                            <h5>Sailing Distance</h5>
-                            <div class="icon-border-right"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 hidden-sm">
-                    <div class="single-fun-wrapper">
-                        <div class="single-icon-three">
-                            <div class="icon-border-left"></div>
-                            <img src="{% static 'img/icon/11.png' %}" class="primary-img" alt="">
-                            <img src="{% static 'img/icon/11-hover-2.png' %}" class="secondary-img" alt="">
-                            <h4><span class="counter">570</span> Days</h4>
-                            <h5>Spent Adventure</h5>
-                            <div class="icon-border-right"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 hidden-sm">
-                    <div class="single-fun-wrapper">
-                        <div class="single-icon-three">
-                            <div class="icon-border-left"></div>
-                            <img src="{% static 'img/icon/12.png' %}" class="primary-img" alt="">
-                            <img src="{% static 'img/icon/12-hover-2.png' %}" class="secondary-img" alt="">
-                            <h4><span class="counter">567</span> M</h4>
-                            <h5>Jugle Distance</h5>
-                            <div class="icon-border-right"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End of Fun Factor Area-->
-    <!--Best Sell Area Start-->
-    <div class="best-sell-area section-padding best-sell-three">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title title-three text-center">
-                        <div class="title-border">
-                            <h1>Best <span>Selling Trips</span></h1>
-                        </div>
-                        <p>Not sure what you’re looking for and need a little inspiration? We can help. Check out our
-                            handpicked <br>lists of topical trips you can take right now.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="sell-text-container">
-                        <div class="title-container">
-                            <h3>Beach Tour</h3>
-                            <div class="best-sell-link">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-rss"></i></a>
-                            </div>
-                        </div>
-                        <P>Get closer to nature. From the jungles of India to the African bush, our small group tours
-                            take you to the heart of nature. From elephants silhouetted against an Africa sunset to
-                            orangutans swinging in the treetops.....</P>
-                        <a href="#" class="button-one button-blue">VIew trip</a>
-                    </div>
-                    <div class="row">
-                        <div class="best-sell-slider carousel-style-one">
-                            <div class="col-md-3">
-                                <div class="hover-effect">
-                                    <div class="box-hover">
-                                        <a href="#">
-                                            <img src="{% static 'img/sell/11.jpg' %}" alt="">
-                                            <span>Sightseeing Tours</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="hover-effect">
-                                    <div class="box-hover">
-                                        <a href="#" class="no-margin">
-                                            <img src="{% static 'img/sell/13.jpg' %}" alt="">
-                                            <span>Beach Party</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="hover-effect">
-                                    <div class="box-hover">
-                                        <a href="#">
-                                            <img src="{% static 'img/sell/12.jpg' %}" alt="">
-                                            <span>Private Charters</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="hover-effect">
-                                    <div class="box-hover">
-                                        <a href="#" class="no-margin">
-                                            <img src="{% static 'img/sell/14.jpg' %}" alt="">
-                                            <span>Family Fun</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="hover-effect">
-                                    <div class="box-hover">
-                                        <a href="#">
-                                            <img src="{% static 'img/sell/13.jpg' %}" alt="">
-                                            <span>Beach Party</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="hover-effect">
-                                    <div class="box-hover">
-                                        <a href="#" class="no-margin">
-                                            <img src="{% static 'img/sell/11.jpg' %}" alt="">
-                                            <span>Sightseeing Tours</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="hover-effect">
-                                    <div class="box-hover">
-                                        <a href="#">
-                                            <img src="{% static 'img/sell/14.jpg' %}" alt="">
-                                            <span>Family Fun</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="hover-effect">
-                                    <div class="box-hover">
-                                        <a href="#" class="no-margin">
-                                            <img src="{% static 'img/sell/12.jpg' %}" alt="">
-                                            <span>Private Charters</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 hidden-sm">
-                    <img src="{% static 'img/sell/15.jpg' %}" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End of Best Sell Area-->
+
+
     <!--Newsletter Area Start-->
     <div class="newsletter-area newsletter-three">
         <div class="container">
@@ -629,4 +414,80 @@
     </div>
     <!--End of Team Area-->
 
+    <script>
+        function updateDestination() {
+            var type = document.getElementById("adventureType").value;
+
+            if (type === "UK Trips") {
+                {% autoescape off %}
+                    document.getElementById("adventureDestination").innerHTML = "{{ uk }}";
+                {% endautoescape %}
+            } else if (type === "International Trips") {
+                {% autoescape off %}
+                    document.getElementById("adventureDestination").innerHTML = "{{ international }}";
+                {% endautoescape %}
+            } else if (type === "Challenges") {
+                {% autoescape off %}
+                    document.getElementById("adventureDestination").innerHTML = "{{ challenge }}";
+                {% endautoescape %}
+            } else if (type === "Training") {
+                {% autoescape off %}
+                    document.getElementById("adventureDestination").innerHTML = "{{ training }}";
+                {% endautoescape %}
+            }
+
+        }
+
+        function updateDates() {
+            $.ajax({
+                type: "POST",
+                url: "{% url 'get_dates' %}",
+                dataType: "json",
+                data: {
+                    "dest": $('#adventureDestination').val(),
+                },
+                success: function (data) {
+                    console.log('this');
+                    $('#adventureDates').html(data.dates);
+                    {% autoescape off %}
+                        document.getElementById("adventureDates").innerHTML = data.dates;
+                    {% endautoescape %}
+                }
+            });
+
+        }
+
+        function getCookie(name) {
+            var cookieValue = null;
+            var i = 0;
+            if (document.cookie && document.cookie !== '') {
+                var cookies = document.cookie.split(';');
+                for (i; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        var csrftoken = getCookie('csrftoken');
+
+        function csrfSafeMethod(method) {
+            // these HTTP methods do not require CSRF protection
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+
+        $.ajaxSetup({
+            crossDomain: false, // obviates need for sameOrigin test
+            beforeSend: function (xhr, settings) {
+                if (!csrfSafeMethod(settings.type)) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+        });
+    </script>
 {% endblock %}
