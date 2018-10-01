@@ -28,17 +28,17 @@
                                                 <option>Training</option>
                                             </select>
                                         </div>
-                                        <div class="adventure-cat destination">
+                                        <div class="adventure-cat destination floatright">
                                             <select name="destination" class="search-adventure"
-                                                    id="adventureDestination" onmousedown="updateDates()">
+                                                    id="adventureDestination">
                                                 <option>Select Destination</option>
                                             </select>
                                         </div>
-                                        <div class="adventure-cat floatright">
-                                            <select name="date" class="search-adventure" id="adventureDates">
-                                                <option>Select Date</option>
-                                            </select>
-                                        </div>
+{#                                        <div class="adventure-cat floatright">#}
+{#                                            <select name="date" class="search-adventure" id="adventureDates">#}
+{#                                                <option>Select Date</option>#}
+{#                                            </select>#}
+{#                                        </div>#}
                                         <div class="clearfix"></div>
                                         <button type="submit" id="btn-search-category" class="button-blue">SEARCH
                                         </button>
@@ -79,146 +79,147 @@
         </div>
     </div>
     <!--End of About Area-->
-    <!--Portfolio Area Start-->
-    <div class="portfolio-area portfolio-three">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title title-three text-center">
-                        <div class="title-border">
-                            <h1>Browse by <span>Hiking &amp; Camping</span></h1>
-                        </div>
-                        <p>Everyone loves to travel, but not everyone loves to travel the same way. G Adventures Travel
-                            Styles gather trips of a feather<br> together so you can spend less time searching and more
-                            time dreaming about where you’ll go.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-4">
-                    <div class="single-portfolio">
-                        <a href="#"><img src="{% static 'img/portfolio/17.jpg' %}" alt=""></a>
-                        <div class="portfolio-text effect-bottom">
-                            <h4><a href="#">Beach Tours</a></h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="portfolio-link">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-rss"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-portfolio">
-                        <a href="#"><img src="{% static 'img/portfolio/18.jpg' %}" alt=""></a>
-                        <div class="portfolio-text effect-bottom">
-                            <h4><a href="#">beach party</a></h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="portfolio-link">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-rss"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4">
-                    <div class="single-portfolio">
-                        <a href="#"><img src="{% static 'img/portfolio/19.jpg' %}" alt=""></a>
-                        <div class="portfolio-text">
-                            <h4><a href="#">Sightsing Tours</a></h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="portfolio-link">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-rss"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-portfolio">
-                        <a href="#"><img src="{% static 'img/portfolio/20.jpg' %}" alt=""></a>
-                        <div class="portfolio-text">
-                            <h4><a href="#">Family Fun</a></h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="portfolio-link">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-rss"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4">
-                    <div class="single-portfolio">
-                        <a href="#"><img src="{% static 'img/portfolio/21.jpg' %}" alt=""></a>
-                        <div class="portfolio-text effect-bottom">
-                            <h4><a href="#">Night Cruises</a></h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="portfolio-link">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-rss"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-portfolio">
-                        <a href="#"><img src="{% static 'img/portfolio/22.jpg' %}" alt=""></a>
-                        <div class="portfolio-text effect-bottom">
-                            <h4><a href="#">Water Games</a></h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="portfolio-link">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-rss"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 hidden-sm">
-                    <div class="single-portfolio">
-                        <a href="#"><img src="{% static 'img/portfolio/23.jpg' %}" alt=""></a>
-                        <div class="portfolio-text">
-                            <h4><a href="#">Private Charter</a></h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="portfolio-link">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-rss"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-portfolio">
-                        <a href="#"><img src="{% static 'img/portfolio/24.jpg' %}" alt=""></a>
-                        <div class="portfolio-text">
-                            <h4><a href="#">Food &amp; Drink</a></h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="portfolio-link">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-rss"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End of Portfolio Area-->
+{#    <!--Portfolio Area Start-->#}
+{#    <div class="portfolio-area portfolio-three">#}
+{#        <div class="container">#}
+{#            <div class="row">#}
+{#                <div class="col-md-12">#}
+{#                    <div class="section-title title-three text-center">#}
+{#                        <div class="title-border">#}
+{#                            <h1>Browse by <span>Hiking &amp; Camping</span></h1>#}
+{#                        </div>#}
+{#                        <p>Everyone loves to travel, but not everyone loves to travel the same way. G Adventures Travel#}
+{#                            Styles gather trips of a feather<br> together so you can spend less time searching and more#}
+{#                            time dreaming about where you’ll go.</p>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="row">#}
+{#                <div class="col-md-3 col-sm-4">#}
+{#                    <div class="single-portfolio">#}
+{#                        <a href="#"><img src="{{ uk_trips.0.image.url }}" alt=""></a>#}
+{#                        <div class="portfolio-text effect-bottom">#}
+{#                            <h4><a href="#">{{ uk_trips.0.title }}</a></h4>#}
+{#                            <p> {{ uk_trips.0.description|truncatechars:100 }}</p>#}
+{#                            <div class="portfolio-link">#}
+{#                                <a href="#"><i class="fa fa-facebook"></i></a>#}
+{#                                <a href="#"><i class="fa fa-twitter"></i></a>#}
+{#                                <a href="#"><i class="fa fa-google-plus"></i></a>#}
+{#                                <a href="#"><i class="fa fa-linkedin"></i></a>#}
+{#                                <a href="#"><i class="fa fa-rss"></i></a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="single-portfolio">#}
+{#                        <a href="#"><img src="{{ uk_trips.1.image.url }}" alt=""></a>#}
+{#                        <div class="portfolio-text effect-bottom">#}
+{#                            <h4><a href="#">{{ uk_trips.1.title }}</a></h4>#}
+{#                            <p>{{ uk_trips.1.description|truncatechars:100 }}</p>#}
+{#                            <div class="portfolio-link">#}
+{#                                <a href="#"><i class="fa fa-facebook"></i></a>#}
+{#                                <a href="#"><i class="fa fa-twitter"></i></a>#}
+{#                                <a href="#"><i class="fa fa-google-plus"></i></a>#}
+{#                                <a href="#"><i class="fa fa-linkedin"></i></a>#}
+{#                                <a href="#"><i class="fa fa-rss"></i></a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-md-3 col-sm-4">#}
+{#                    <div class="single-portfolio">#}
+{#                        <a href="#"><img src="" alt=""></a>#}
+{#                        <div class="portfolio-text">#}
+{#                            <h4><a href="#">Sightsing Tours</a></h4>#}
+{#                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>#}
+{#                            <div class="portfolio-link">#}
+{#                                <a href="#"><i class="fa fa-facebook"></i></a>#}
+{#                                <a href="#"><i class="fa fa-twitter"></i></a>#}
+{#                                <a href="#"><i class="fa fa-google-plus"></i></a>#}
+{#                                <a href="#"><i class="fa fa-linkedin"></i></a>#}
+{#                                <a href="#"><i class="fa fa-rss"></i></a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="single-portfolio">#}
+{#                        <a href="#"><img src="{% static 'img/portfolio/20.jpg' %}" alt=""></a>#}
+{#                        <div class="portfolio-text">#}
+{#                            <h4><a href="#">Family Fun</a></h4>#}
+{#                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>#}
+{#                            <div class="portfolio-link">#}
+{#                                <a href="#"><i class="fa fa-facebook"></i></a>#}
+{#                                <a href="#"><i class="fa fa-twitter"></i></a>#}
+{#                                <a href="#"><i class="fa fa-google-plus"></i></a>#}
+{#                                <a href="#"><i class="fa fa-linkedin"></i></a>#}
+{#                                <a href="#"><i class="fa fa-rss"></i></a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-md-3 col-sm-4">#}
+{#                    <div class="single-portfolio">#}
+{#                        <a href="#"><img src="" alt=""></a>#}
+{#                        <div class="portfolio-text">#}
+{#                            <h4><a href="#">Sightsing Tours</a></h4>#}
+{#                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>#}
+{#                            <div class="portfolio-link">#}
+{#                                <a href="#"><i class="fa fa-facebook"></i></a>#}
+{#                                <a href="#"><i class="fa fa-twitter"></i></a>#}
+{#                                <a href="#"><i class="fa fa-google-plus"></i></a>#}
+{#                                <a href="#"><i class="fa fa-linkedin"></i></a>#}
+{#                                <a href="#"><i class="fa fa-rss"></i></a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="single-portfolio">#}
+{#                        <a href="#"><img src="{% static 'img/portfolio/20.jpg' %}" alt=""></a>#}
+{#                        <div class="portfolio-text">#}
+{#                            <h4><a href="#">Family Fun</a></h4>#}
+{#                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>#}
+{#                            <div class="portfolio-link">#}
+{#                                <a href="#"><i class="fa fa-facebook"></i></a>#}
+{#                                <a href="#"><i class="fa fa-twitter"></i></a>#}
+{#                                <a href="#"><i class="fa fa-google-plus"></i></a>#}
+{#                                <a href="#"><i class="fa fa-linkedin"></i></a>#}
+{#                                <a href="#"><i class="fa fa-rss"></i></a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-md-3 col-sm-4">#}
+{#                    <div class="single-portfolio">#}
+{#                        <a href="#"><img src="" alt=""></a>#}
+{#                        <div class="portfolio-text">#}
+{#                            <h4><a href="#">Sightsing Tours</a></h4>#}
+{#                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>#}
+{#                            <div class="portfolio-link">#}
+{#                                <a href="#"><i class="fa fa-facebook"></i></a>#}
+{#                                <a href="#"><i class="fa fa-twitter"></i></a>#}
+{#                                <a href="#"><i class="fa fa-google-plus"></i></a>#}
+{#                                <a href="#"><i class="fa fa-linkedin"></i></a>#}
+{#                                <a href="#"><i class="fa fa-rss"></i></a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="single-portfolio">#}
+{#                        <a href="#"><img src="{% static 'img/portfolio/20.jpg' %}" alt=""></a>#}
+{#                        <div class="portfolio-text">#}
+{#                            <h4><a href="#">Family Fun</a></h4>#}
+{#                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>#}
+{#                            <div class="portfolio-link">#}
+{#                                <a href="#"><i class="fa fa-facebook"></i></a>#}
+{#                                <a href="#"><i class="fa fa-twitter"></i></a>#}
+{#                                <a href="#"><i class="fa fa-google-plus"></i></a>#}
+{#                                <a href="#"><i class="fa fa-linkedin"></i></a>#}
+{#                                <a href="#"><i class="fa fa-rss"></i></a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{##}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#    <!--End of Portfolio Area-->#}
 
 
     <!--Newsletter Area Start-->
@@ -230,8 +231,8 @@
                         <div class="title-border">
                             <h1 class="text-white">Subscribe for <span>Newsletter</span></h1>
                         </div>
-                        <p class="text-white">Join our community of over 300,000 global readers who receive emails
-                            filled with news,<br> promotions, and other good stuff from G Adventures.</p>
+                        <p class="text-white">Join our community of global readers who receive emails
+                            filled with news,<br> promotions, and other good stuff from Fitways Adventures.</p>
                     </div>
                     <form action="#" method="post" id="newsletter">
                         <div class="newsletter-content">
@@ -439,23 +440,35 @@
         }
 
         function updateDates() {
-            $.ajax({
-                type: "POST",
-                url: "{% url 'get_dates' %}",
-                dataType: "json",
-                data: {
-                    "dest": $('#adventureDestination').val(),
-                },
-                success: function (data) {
-                    console.log('this');
-                    $('#adventureDates').html(data.dates);
-                    {% autoescape off %}
-                        document.getElementById("adventureDates").innerHTML = data.dates;
-                    {% endautoescape %}
-                }
-            });
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
 
+                    console.log('this');
+                    {% autoescape off %}
+                        document.getElementById("adventureDates").innerHTML = this.responseText;
+                    {% endautoescape %}
+            };
+            xhttp.open("GET", "{% url 'get_dates' %}", true);
+            xhttp.send();
         }
+
+            {#$.ajax({#}
+            {#    type: "GET",#}
+            {#    url: "{% url 'get_dates' %}",#}
+            {#    dataType: "json",#}
+            {#    data: {#}
+            {#        "dest": $('#adventureDestination').val(),#}
+            {#    },#}
+            {#    success: function (data) {#}
+            {#        console.log('this');#}
+            {#        $('#adventureDates').html(data.dates);#}
+            {#        {% autoescape off %}#}
+            {#            document.getElementById("adventureDates").innerHTML = data.dates;#}
+            {#        {% endautoescape %}#}
+            {#    }#}
+
+
+
 
         function getCookie(name) {
             var cookieValue = null;

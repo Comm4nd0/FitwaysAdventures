@@ -20,6 +20,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="oeg" />
     <orderEntry type="module" module-name="salary_calc" />
+    <orderEntry type="module" module-name="jth" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />

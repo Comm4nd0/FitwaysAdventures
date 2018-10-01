@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
-from activities.models import Activity, Trek, Training, Challenge
+from activities.models import Activity
 import json
 
 def home(request):
@@ -35,24 +35,22 @@ def home(request):
     for trip in training_events:
         training += '<option>' + trip.title + '</option>'
     return render(request, 'home.html', {'uk': uk,
+                                         'uk_trips': uk_trips,
                                          'international': international,
+                                         'international_trips': international_trips,
                                          'challenge': challenge,
-                                         'training': training})
+                                         'challenges': challenges,
+                                         'training': training,
+                                         'training_events': training_events})
 
 def get_dates(request):
     destination = request.POST.get('dest')
 
-    treks = Trek.objects.all().filter(Title=destination)
-    training = Training.objects.all().filter(Title=destination)
-    challenge = Challenge.objects.all().filter(Title=destination)
+    activity = Activity.objects.all().filter(Title=destination)
 
     dates = '<option>Select Date</option>'
 
-    for event in treks:
-        dates += '<option>' + event.from_date + '-' + event.to_date + '</option>'
-    for event in training:
-        dates += '<option>' + event.from_date + '-' + event.to_date + '</option>'
-    for event in challenge:
+    for event in activity:
         dates += '<option>' + event.from_date + '-' + event.to_date + '</option>'
 
     return HttpResponse(json.dumps({'dates': dates}), content_type='application/json')

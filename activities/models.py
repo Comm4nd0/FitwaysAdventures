@@ -43,26 +43,8 @@ class Activity(models.Model):
         return self.title
 
 
-class Trek(models.Model):
-    title = models.ForeignKey(Activity, on_delete=models.PROTECT)
-    from_date = models.DateField()
-    to_date = models.DateField()
 
-    def __str__(self):
-        return str(self.title)
-
-
-
-class Challenge(models.Model):
-    title = models.ForeignKey(Activity, on_delete=models.PROTECT)
-    from_date = models.DateField()
-    to_date = models.DateField()
-
-    def __str__(self):
-        return str(self.title)
-
-
-class Training(models.Model):
+class Date(models.Model):
     title = models.ForeignKey(Activity, on_delete=models.PROTECT)
     from_date = models.DateField()
     to_date = models.DateField()

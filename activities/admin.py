@@ -1,10 +1,15 @@
 from django.contrib import admin
-from.models import Activity, Trek, Training, Challenge
+from.models import Activity, Date
 # Register your models here.
 
 
+class ActivityAdminInLine(admin.TabularInline):
+    model = Date
+    extra = 3
+
+
 class ActivityAdmin(admin.ModelAdmin):
-    pass
+    inlines = [ActivityAdminInLine, ]
 
 
 class TrekAdmin(admin.ModelAdmin):
@@ -19,11 +24,4 @@ class ChallengeAdmin(admin.ModelAdmin):
     pass
 
 
-
 admin.site.register(Activity, ActivityAdmin)
-
-admin.site.register(Trek, TrekAdmin)
-
-admin.site.register(Training, TrainingAdmin)
-
-admin.site.register(Challenge, ChallengeAdmin)
