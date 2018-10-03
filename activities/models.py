@@ -45,7 +45,7 @@ class Activity(models.Model):
 
 
 class Date(models.Model):
-    title = models.ForeignKey(Activity, on_delete=models.PROTECT)
+    title = models.ForeignKey(Activity, related_name='date', on_delete=models.PROTECT)
     from_date = models.DateField()
     to_date = models.DateField()
 

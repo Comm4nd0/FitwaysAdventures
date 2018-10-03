@@ -34,11 +34,11 @@
                                                 <option>Select Destination</option>
                                             </select>
                                         </div>
-{#                                        <div class="adventure-cat floatright">#}
-{#                                            <select name="date" class="search-adventure" id="adventureDates">#}
-{#                                                <option>Select Date</option>#}
-{#                                            </select>#}
-{#                                        </div>#}
+                                        {#                                        <div class="adventure-cat floatright">#}
+                                        {#                                            <select name="date" class="search-adventure" id="adventureDates">#}
+                                        {#                                                <option>Select Date</option>#}
+                                        {#                                            </select>#}
+                                        {#                                        </div>#}
                                         <div class="clearfix"></div>
                                         <button type="submit" id="btn-search-category" class="button-blue">SEARCH
                                         </button>
@@ -79,147 +79,117 @@
         </div>
     </div>
     <!--End of About Area-->
-{#    <!--Portfolio Area Start-->#}
-{#    <div class="portfolio-area portfolio-three">#}
-{#        <div class="container">#}
-{#            <div class="row">#}
-{#                <div class="col-md-12">#}
-{#                    <div class="section-title title-three text-center">#}
-{#                        <div class="title-border">#}
-{#                            <h1>Browse by <span>Hiking &amp; Camping</span></h1>#}
-{#                        </div>#}
-{#                        <p>Everyone loves to travel, but not everyone loves to travel the same way. G Adventures Travel#}
-{#                            Styles gather trips of a feather<br> together so you can spend less time searching and more#}
-{#                            time dreaming about where you’ll go.</p>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="row">#}
-{#                <div class="col-md-3 col-sm-4">#}
-{#                    <div class="single-portfolio">#}
-{#                        <a href="#"><img src="{{ uk_trips.0.image.url }}" alt=""></a>#}
-{#                        <div class="portfolio-text effect-bottom">#}
-{#                            <h4><a href="#">{{ uk_trips.0.title }}</a></h4>#}
-{#                            <p> {{ uk_trips.0.description|truncatechars:100 }}</p>#}
-{#                            <div class="portfolio-link">#}
-{#                                <a href="#"><i class="fa fa-facebook"></i></a>#}
-{#                                <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                <a href="#"><i class="fa fa-google-plus"></i></a>#}
-{#                                <a href="#"><i class="fa fa-linkedin"></i></a>#}
-{#                                <a href="#"><i class="fa fa-rss"></i></a>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="single-portfolio">#}
-{#                        <a href="#"><img src="{{ uk_trips.1.image.url }}" alt=""></a>#}
-{#                        <div class="portfolio-text effect-bottom">#}
-{#                            <h4><a href="#">{{ uk_trips.1.title }}</a></h4>#}
-{#                            <p>{{ uk_trips.1.description|truncatechars:100 }}</p>#}
-{#                            <div class="portfolio-link">#}
-{#                                <a href="#"><i class="fa fa-facebook"></i></a>#}
-{#                                <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                <a href="#"><i class="fa fa-google-plus"></i></a>#}
-{#                                <a href="#"><i class="fa fa-linkedin"></i></a>#}
-{#                                <a href="#"><i class="fa fa-rss"></i></a>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#                <div class="col-md-3 col-sm-4">#}
-{#                    <div class="single-portfolio">#}
-{#                        <a href="#"><img src="" alt=""></a>#}
-{#                        <div class="portfolio-text">#}
-{#                            <h4><a href="#">Sightsing Tours</a></h4>#}
-{#                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>#}
-{#                            <div class="portfolio-link">#}
-{#                                <a href="#"><i class="fa fa-facebook"></i></a>#}
-{#                                <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                <a href="#"><i class="fa fa-google-plus"></i></a>#}
-{#                                <a href="#"><i class="fa fa-linkedin"></i></a>#}
-{#                                <a href="#"><i class="fa fa-rss"></i></a>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="single-portfolio">#}
-{#                        <a href="#"><img src="{% static 'img/portfolio/20.jpg' %}" alt=""></a>#}
-{#                        <div class="portfolio-text">#}
-{#                            <h4><a href="#">Family Fun</a></h4>#}
-{#                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>#}
-{#                            <div class="portfolio-link">#}
-{#                                <a href="#"><i class="fa fa-facebook"></i></a>#}
-{#                                <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                <a href="#"><i class="fa fa-google-plus"></i></a>#}
-{#                                <a href="#"><i class="fa fa-linkedin"></i></a>#}
-{#                                <a href="#"><i class="fa fa-rss"></i></a>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#                <div class="col-md-3 col-sm-4">#}
-{#                    <div class="single-portfolio">#}
-{#                        <a href="#"><img src="" alt=""></a>#}
-{#                        <div class="portfolio-text">#}
-{#                            <h4><a href="#">Sightsing Tours</a></h4>#}
-{#                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>#}
-{#                            <div class="portfolio-link">#}
-{#                                <a href="#"><i class="fa fa-facebook"></i></a>#}
-{#                                <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                <a href="#"><i class="fa fa-google-plus"></i></a>#}
-{#                                <a href="#"><i class="fa fa-linkedin"></i></a>#}
-{#                                <a href="#"><i class="fa fa-rss"></i></a>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="single-portfolio">#}
-{#                        <a href="#"><img src="{% static 'img/portfolio/20.jpg' %}" alt=""></a>#}
-{#                        <div class="portfolio-text">#}
-{#                            <h4><a href="#">Family Fun</a></h4>#}
-{#                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>#}
-{#                            <div class="portfolio-link">#}
-{#                                <a href="#"><i class="fa fa-facebook"></i></a>#}
-{#                                <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                <a href="#"><i class="fa fa-google-plus"></i></a>#}
-{#                                <a href="#"><i class="fa fa-linkedin"></i></a>#}
-{#                                <a href="#"><i class="fa fa-rss"></i></a>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#                <div class="col-md-3 col-sm-4">#}
-{#                    <div class="single-portfolio">#}
-{#                        <a href="#"><img src="" alt=""></a>#}
-{#                        <div class="portfolio-text">#}
-{#                            <h4><a href="#">Sightsing Tours</a></h4>#}
-{#                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>#}
-{#                            <div class="portfolio-link">#}
-{#                                <a href="#"><i class="fa fa-facebook"></i></a>#}
-{#                                <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                <a href="#"><i class="fa fa-google-plus"></i></a>#}
-{#                                <a href="#"><i class="fa fa-linkedin"></i></a>#}
-{#                                <a href="#"><i class="fa fa-rss"></i></a>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="single-portfolio">#}
-{#                        <a href="#"><img src="{% static 'img/portfolio/20.jpg' %}" alt=""></a>#}
-{#                        <div class="portfolio-text">#}
-{#                            <h4><a href="#">Family Fun</a></h4>#}
-{#                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>#}
-{#                            <div class="portfolio-link">#}
-{#                                <a href="#"><i class="fa fa-facebook"></i></a>#}
-{#                                <a href="#"><i class="fa fa-twitter"></i></a>#}
-{#                                <a href="#"><i class="fa fa-google-plus"></i></a>#}
-{#                                <a href="#"><i class="fa fa-linkedin"></i></a>#}
-{#                                <a href="#"><i class="fa fa-rss"></i></a>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{##}
-{#            </div>#}
-{#        </div>#}
-{#    </div>#}
-{#    <!--End of Portfolio Area-->#}
+    <!--Portfolio Area Start-->
+    <div class="portfolio-area portfolio-three">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title title-three text-center">
+                        <div class="title-border">
+                            <h1>Upcoming <span>Treks &amp; Challenges</span></h1>
+                        </div>
+                        <p>Get involved and signup to join in on the upcoming treks and challenges.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-4">
+                    <div class="single-portfolio">
+                        <a href="#"><img src="{{ top_uk.0.image.url }}" alt=""></a>
+                        <div class="portfolio-text effect-bottom">
+                            <h4><a href="#">{{ top_uk.0.title|truncatechars:21 }}</a></h4>
+                            <p> {{ top_uk.0.description|truncatechars:100 }}</p>
+                            <div class="portfolio-link">
+                                <p>{{ top_uk.0.date.first.from_date }} - {{ top_uk.0.date.first.to_date }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-portfolio">
+                        <a href="#"><img src="{{ top_uk.1.image.url }}" alt=""></a>
+                        <div class="portfolio-text effect-bottom">
+                            <h4><a href="#">{{ top_uk.1.title|truncatechars:21 }}</a></h4>
+                            <p>{{ top_uk.1.description|truncatechars:100 }}</p>
+                            <div class="portfolio-link">
+                                <p>{{ top_uk.1.date.first.from_date }} - {{ top_uk.1.date.first.to_date }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="single-portfolio">
+                        <a href="#"><img src="{{ top_int.0.image.url }}" alt=""></a>
+                        <div class="portfolio-text ">
+                            <h4><a href="#">{{ top_int.0.title|truncatechars:21 }}</a></h4>
+                            <p> {{ top_int.0.description|truncatechars:100 }}</p>
+                            <div class="portfolio-link">
+                                <p>{{ top_int.0.date.first.from_date }} - {{ top_int.0.date.first.to_date }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-portfolio">
+                        <a href="#"><img src="{{ top_int.1.image.url }}" alt=""></a>
+                        <div class="portfolio-text ">
+                            <h4><a href="#">{{ top_int.1.title|truncatechars:21 }}</a></h4>
+                            <p>{{ top_int.1.description|truncatechars:100 }}</p>
+                            <div class="portfolio-link">
+                                <p>{{ top_int.1.date.first.from_date }} - {{ top_int.1.date.first.to_date }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="single-portfolio">
+                        <a href="#"><img src="{{ top_challenge.0.image.url }}" alt=""></a>
+                        <div class="portfolio-text effect-bottom">
+                            <h4><a href="#">{{ top_challenge.0.title|truncatechars:21 }}</a></h4>
+                            <p> {{ top_challenge.0.description|truncatechars:100 }}</p>
+                            <div class="portfolio-link">
+                                <p>{{ top_challenge.0.date.first.from_date }}
+                                    - {{ top_challenge.0.date.first.to_date }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-portfolio">
+                        <a href="#"><img src="{{ top_challenge.1.image.url }}" alt=""></a>
+                        <div class="portfolio-text effect-bottom">
+                            <h4><a href="#">{{ top_challenge.1.title|truncatechars:21 }}</a></h4>
+                            <p>{{ top_challenge.1.description|truncatechars:100 }}</p>
+                            <div class="portfolio-link">
+                                <p>{{ top_challenge.1.date.first.from_date }}
+                                    - {{ top_challenge.1.date.first.to_date }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="single-portfolio">
+                        <a href="#"><img src="{{ top_training.0.image.url }}" alt=""></a>
+                        <div class="portfolio-text ">
+                            <h4><a href="#">{{ top_training.0.title|truncatechars:21 }}</a></h4>
+                            <p> {{ top_training.0.description|truncatechars:100 }}</p>
+                            <div class="portfolio-link">
+                                <p>{{ top_training.0.date.first.from_date }}
+                                    - {{ top_training.0.date.first.to_date }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-portfolio">
+                        <a href="#"><img src="{{ top_training.1.image.url }}" alt=""></a>
+                        <div class="portfolio-text ">
+                            <h4><a href="#">{{ top_training.1.title|truncatechars:21 }}</a></h4>
+                            <p>{{ top_training.1.description|truncatechars:100 }}</p>
+                            <div class="portfolio-link">
+                                <p>{{ top_training.1.date.first.from_date }}
+                                    - {{ top_training.1.date.first.to_date }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--End of Portfolio Area-->
 
 
     <!--Newsletter Area Start-->
@@ -251,116 +221,115 @@
         </div>
     </div>
     <!--End of Newsletter Area-->
-    <!--Blog Area Start-->
-    <div class="blog-area section-padding blog-three-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title title-three text-center">
-                        <div class="title-border">
-                            <h1>Latest <span>Blog Posts</span></h1>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dolor turpis, pulvinar
-                            varius dui<br> id, convallis iaculis eros. Praesent porta lacinia elementum.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="blog-carousel">
-                    <div class="col-md-6">
-                        <div class="single-blog hover-effect">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="blog-image box-hover">
-                                        <a href="blog-details.html"><img src="{% static 'img/blog/1.jpg' %}" alt=""></a>
-                                        <div class="date-time">
-                                            <span class="date">10</span>
-                                            <span class="month">AUG</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 margin-left">
-                                    <div class="blog-text">
-                                        <h4><a href="blog-details.html">What is travel? We answer the big, burning
-                                            question.....</a></h4>
-                                        <p>The question of What Travel Is is interesting, but more for what it tells you
-                                            about the people doing the asking. The question of What Travel Is is
-                                            interesting, but more for what it tells you about the people doing the
-                                            asking.</p>
-                                        <a href="blog-details.html" class="button-one">Learn More</a>
-                                        <div class="blog-link">
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                                            <a href="#"><i class="fa fa-rss"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="single-blog hover-effect">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="blog-image box-hover">
-                                        <a href="blog-details.html"><img src="{% static 'img/blog/2.jpg' %}" alt=""></a>
-                                        <div class="date-time">
-                                            <span class="date">10</span>
-                                            <span class="month">AUG</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 margin-left">
-                                    <div class="blog-text">
-                                        <h4><a href="blog-details.html">What is travel? We answer the big, burning
-                                            question.....</a></h4>
-                                        <p>The question of What Travel Is is interesting, but more for what it tells you
-                                            about the people doing the asking. The question of What Travel Is is
-                                            interesting, but more for what it tells you about the people doing the
-                                            asking.</p>
-                                        <a href="blog-details.html" class="button-one">Learn More</a>
-                                        <div class="blog-link">
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                                            <a href="#"><i class="fa fa-rss"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End of Blog Area-->
+    {#    <!--Blog Area Start-->#}
+    {#    <div class="blog-area section-padding blog-three-area">#}
+    {#        <div class="container">#}
+    {#            <div class="row">#}
+    {#                <div class="col-md-12">#}
+    {#                    <div class="section-title title-three text-center">#}
+    {#                        <div class="title-border">#}
+    {#                            <h1>Latest <span>Blog Posts</span></h1>#}
+    {#                        </div>#}
+    {#                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dolor turpis, pulvinar#}
+    {#                            varius dui<br> id, convallis iaculis eros. Praesent porta lacinia elementum.</p>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#            <div class="row">#}
+    {#                <div class="blog-carousel">#}
+    {#                    <div class="col-md-6">#}
+    {#                        <div class="single-blog hover-effect">#}
+    {#                            <div class="row">#}
+    {#                                <div class="col-md-6 col-sm-6">#}
+    {#                                    <div class="blog-image box-hover">#}
+    {#                                        <a href="blog-details.html"><img src="{% static 'img/blog/1.jpg' %}" alt=""></a>#}
+    {#                                        <div class="date-time">#}
+    {#                                            <span class="date">10</span>#}
+    {#                                            <span class="month">AUG</span>#}
+    {#                                        </div>#}
+    {#                                    </div>#}
+    {#                                </div>#}
+    {#                                <div class="col-md-6 col-sm-6 margin-left">#}
+    {#                                    <div class="blog-text">#}
+    {#                                        <h4><a href="blog-details.html">What is travel? We answer the big, burning#}
+    {#                                            question.....</a></h4>#}
+    {#                                        <p>The question of What Travel Is is interesting, but more for what it tells you#}
+    {#                                            about the people doing the asking. The question of What Travel Is is#}
+    {#                                            interesting, but more for what it tells you about the people doing the#}
+    {#                                            asking.</p>#}
+    {#                                        <a href="blog-details.html" class="button-one">Learn More</a>#}
+    {#                                        <div class="blog-link">#}
+    {#                                            <a href="#"><i class="fa fa-facebook"></i></a>#}
+    {#                                            <a href="#"><i class="fa fa-twitter"></i></a>#}
+    {#                                            <a href="#"><i class="fa fa-google-plus"></i></a>#}
+    {#                                            <a href="#"><i class="fa fa-linkedin"></i></a>#}
+    {#                                            <a href="#"><i class="fa fa-rss"></i></a>#}
+    {#                                        </div>#}
+    {#                                    </div>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                    <div class="col-md-6">#}
+    {#                        <div class="single-blog hover-effect">#}
+    {#                            <div class="row">#}
+    {#                                <div class="col-md-6 col-sm-6">#}
+    {#                                    <div class="blog-image box-hover">#}
+    {#                                        <a href="blog-details.html"><img src="{% static 'img/blog/2.jpg' %}" alt=""></a>#}
+    {#                                        <div class="date-time">#}
+    {#                                            <span class="date">10</span>#}
+    {#                                            <span class="month">AUG</span>#}
+    {#                                        </div>#}
+    {#                                    </div>#}
+    {#                                </div>#}
+    {#                                <div class="col-md-6 col-sm-6 margin-left">#}
+    {#                                    <div class="blog-text">#}
+    {#                                        <h4><a href="blog-details.html">What is travel? We answer the big, burning#}
+    {#                                            question.....</a></h4>#}
+    {#                                        <p>The question of What Travel Is is interesting, but more for what it tells you#}
+    {#                                            about the people doing the asking. The question of What Travel Is is#}
+    {#                                            interesting, but more for what it tells you about the people doing the#}
+    {#                                            asking.</p>#}
+    {#                                        <a href="blog-details.html" class="button-one">Learn More</a>#}
+    {#                                        <div class="blog-link">#}
+    {#                                            <a href="#"><i class="fa fa-facebook"></i></a>#}
+    {#                                            <a href="#"><i class="fa fa-twitter"></i></a>#}
+    {#                                            <a href="#"><i class="fa fa-google-plus"></i></a>#}
+    {#                                            <a href="#"><i class="fa fa-linkedin"></i></a>#}
+    {#                                            <a href="#"><i class="fa fa-rss"></i></a>#}
+    {#                                        </div>#}
+    {#                                    </div>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </div>#}
+    {#    <!--End of Blog Area-->#}
     <!--Team Area Start-->
-    <div class="team-area section-padding team-three">
+    <div class="team-area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="section-title title-three text-center">
+                    <div class="section-title text-center">
                         <div class="title-border">
                             <h1>Our <span>Team</span></h1>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dolor turpis, pulvinar
-                            varius dui<br> id, convallis iaculis eros. Praesent porta lacinia elementum.</p>
+                        <p>The team are qualified, experienced and motivated for all the right reasons; we’ve worked hard to assemble a first-rate team. All our guides have climbed internationally and have an extensive background in their field.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
+                {% for member in team %}
                 <div class="col-md-4 col-sm-6">
                     <div class="single-member">
                         <div class="team-image">
                             <a href="#"><img src="{% static 'img/team/1.jpg' %}" alt=""></a>
                             <div class="member-text effect-bottom">
-                                <h4><a href="#">Maria B. | <span>Hiking Guide</span></a></h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text</p>
+                                <h4><a href="#">{{ member.name }} | <span>{{ member.role }}</span></a></h4>
+                                <p>{{ member.bio|truncatechars:200 }}</p>
                                 <div class="member-link">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -372,49 +341,42 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-member">
-                        <div class="team-image">
-                            <a href="#"><img src="{% static 'img/team/2.jpg' %}" alt=""></a>
-                            <div class="member-text effect-bottom">
-                                <h4><a href="#">Janifer Craving | <span>Photographer</span></a></h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text</p>
-                                <div class="member-link">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                    <a href="#"><i class="fa fa-rss"></i></a>
-                                </div>
-                            </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!--End of Team Area-->
+    <!--Partner Area Start-->
+    <div class="partner-area partner-three-area section-bottom-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title title-three text-center">
+                        <div class="title-border">
+                            <h1>Our <span>Certifications</span></h1>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 hidden-sm">
-                    <div class="single-member">
-                        <div class="team-image">
-                            <a href="#"><img src="{% static 'img/team/3.jpg' %}" alt=""></a>
-                            <div class="member-text effect-bottom">
-                                <h4><a href="#">Matt Jason | <span>Guide</span></a></h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text</p>
-                                <div class="member-link">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                    <a href="#"><i class="fa fa-rss"></i></a>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+            <div class="row">
+                <div class="partner-carousel carousel-style-two">
+                    <div class="col-md-3">
+                        <a href="#"><img src="{% static 'cert/cert1.png' %}" alt=""></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#"><img src="{% static 'cert/cert2.jpg' %}" alt=""></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#"><img src="{% static 'cert/cert3.jpg' %}" alt=""></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#"><img src="{% static 'cert/cert4.png' %}" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--End of Team Area-->
-
+    <!--End of Partner Area-->
     <script>
         function updateDestination() {
             var type = document.getElementById("adventureType").value;
@@ -443,31 +405,29 @@
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
 
-                    console.log('this');
-                    {% autoescape off %}
-                        document.getElementById("adventureDates").innerHTML = this.responseText;
-                    {% endautoescape %}
+                console.log('this');
+                {% autoescape off %}
+                    document.getElementById("adventureDates").innerHTML = this.responseText;
+                {% endautoescape %}
             };
             xhttp.open("GET", "{% url 'get_dates' %}", true);
             xhttp.send();
         }
 
-            {#$.ajax({#}
-            {#    type: "GET",#}
-            {#    url: "{% url 'get_dates' %}",#}
-            {#    dataType: "json",#}
-            {#    data: {#}
-            {#        "dest": $('#adventureDestination').val(),#}
-            {#    },#}
-            {#    success: function (data) {#}
-            {#        console.log('this');#}
-            {#        $('#adventureDates').html(data.dates);#}
-            {#        {% autoescape off %}#}
-            {#            document.getElementById("adventureDates").innerHTML = data.dates;#}
-            {#        {% endautoescape %}#}
-            {#    }#}
-
-
+        {#$.ajax({#}
+        {#    type: "GET",#}
+        {#    url: "{% url 'get_dates' %}",#}
+        {#    dataType: "json",#}
+        {#    data: {#}
+        {#        "dest": $('#adventureDestination').val(),#}
+        {#    },#}
+        {#    success: function (data) {#}
+        {#        console.log('this');#}
+        {#        $('#adventureDates').html(data.dates);#}
+        {#        {% autoescape off %}#}
+        {#            document.getElementById("adventureDates").innerHTML = data.dates;#}
+        {#        {% endautoescape %}#}
+        {#    }#}
 
 
         function getCookie(name) {

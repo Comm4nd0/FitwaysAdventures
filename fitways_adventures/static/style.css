@@ -1752,12 +1752,12 @@ header.header-three {top: 10px}
 /*  16.7 Home Three Newsletter Area
 /*----------------------------------------*/
 .newsletter-area.newsletter-three {
-    background: #ecebeb url("img/banner/25.jpg") no-repeat scroll center top / cover ;
+    background: #fff url("img/banner/25.jpg") no-repeat scroll center top / cover ;
     padding-bottom: 143px;
 }
 .newsletter-area.newsletter-three::before {background: rgba(0, 0, 0, 0) none repeat scroll 0 0;}
 .newsletter-area.newsletter-three::after {
-    background: rgba(0, 0, 0, 0) url("img/banner/transparent-3-gray.png") no-repeat scroll center top / cover ;
+    background: rgba(0, 0, 0, 0) url("img/banner/transparent-bottom.png") no-repeat scroll center top / cover ;
     height: 47px;
 }
 .newsletter-three .newsletter-content input {

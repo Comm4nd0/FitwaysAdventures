@@ -21,7 +21,7 @@
 
     <!-- Bootstrap CSS
     ============================================ -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 
     <!-- Fontawsome CSS
     ============================================ -->
@@ -304,40 +304,7 @@
 
 {% endblock %}
 
-<!--Partner Area Start-->
-<div class="partner-area partner-three-area section-bottom-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title title-three text-center">
-                    <div class="title-border">
-                        <h1>Our <span>Partners</span></h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="partner-carousel carousel-style-two">
-                <div class="col-md-3">
-                    <a href="#"><img src="{% static 'img/brand/1.jpg' %}" alt=""></a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#"><img src="{% static 'img/brand/2.jpg' %}" alt=""></a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#"><img src="{% static 'img/brand/3.jpg' %}" alt=""></a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#"><img src="{% static 'img/brand/4.jpg' %}" alt=""></a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#"><img src="{% static 'img/brand/1.jpg' %}" alt=""></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--End of Partner Area-->
+
 <!--Footer Widget Area Start-->
 <div class="footer-widget-area footer-widget-three">
     <div class="container">
@@ -429,7 +396,7 @@
             </div>
             <div class="col-md-6 col-sm-6">
                 <div class="payment-image">
-                    <img src="img/payment.png" alt="">
+                    <img src="{% static 'img/payment.png' %}" alt="">
                 </div>
             </div>
         </div>
@@ -441,12 +408,12 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-5 col-sm-12">
-                <span>Copyright © 2016 <a href="#">Power-Boosts</a>. All rights reserved.</span>
+                <span>Copyright © 2018 <a href="#">Fitways Adventures</a>. All rights reserved.</span>
             </div>
             <div class="col-lg-8 col-md-7 col-sm-12">
                 <nav>
                     <ul id="footer-menu">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="shop-grid-no-sidebar.html">Destinations</a></li>
                         <li><a href="shop-grid-no-sidebar.html">Travel Styles</a></li>
                         <li><a href="shop-grid-no-sidebar.html">Specials</a></li>
